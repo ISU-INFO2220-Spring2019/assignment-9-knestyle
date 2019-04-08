@@ -1,0 +1,34 @@
+﻿/*
+    Tyler Kness-Miller
+    INFO 2220
+    Professor Holmes
+    28 January 2019
+    The second style sheet that was created for Part 4 (even though it is labeled as 3).
+*/
+
+body {
+}
+/*Set hover events.*/
+a:hover{
+    color:#888888;
+}
+
+td:hover{
+    background-color:#000000;
+    color:#FFFFFF;
+    cursor:cell;
+    
+}
+body div.success:before, body div.error:before, body div.warning:before {
+    content:"Message: ";
+}
+/*Set special class for spans in the body.*/
+body#csstest p span.special {
+    font-weight: normal;
+    text-transform: uppercase;
+    text-decoration: overline;
+}
+
+body#csstest p span.special:before, body#csstest p span.special:after {
+    content:'"';
+}

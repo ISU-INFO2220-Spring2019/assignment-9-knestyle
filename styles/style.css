@@ -1,0 +1,100 @@
+﻿/*
+    Tyler Kness-Miller
+    INFO 2220
+    Professor Holmes
+    28 January 2019
+    First style sheet that was created for Part 3.
+*/
+
+/*Import the second style sheet into the first one.*/
+@import url('stylePartTwo.css');
+body {
+    font-family:'Trebuchet MS','Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial, sans-serif;
+    padding:10px;
+}
+p {
+    padding:2ex;
+}
+body#csstest p span { 
+    font-weight:bolder;
+}
+
+table span {
+    text-decoration:underline;
+}
+
+a {
+    color:#ff8800;
+}
+
+h1 {
+    font-size:2em;
+    color:#ff8800;
+}
+
+h2 {
+    font-size:1.8em;
+    color:#888888;
+}
+
+h3 {
+    font-size:1.6em;
+}
+/*Define table elements and their styles.*/
+th {
+    background-color:#ff8800;
+    color:#ffffff;
+}
+
+tr {
+    font-size:0.9em;
+    background-color:#eeeeee;
+}
+
+tr.other {
+    background-color:#dddddd;
+}
+/*Used for all div tags.*/
+body div{
+    border:solid 1px #AAAAAA;
+    font-weight:bold;
+    padding:0.3em;
+    margin:0.3em;
+}
+/*Define each specific class for div tags.*/
+body div.success {
+    color:#008800;
+    background-color:#F0FFF0;
+    border-color: #008800;
+}
+
+p.success {
+    color: #008800;
+    background-color: #F0FFF0;
+    border-color: #008800;
+}
+
+body div.warning {
+    color: #888800;
+    background-color:#FFFFF0;
+    border-color:#888800;
+}
+
+p.warning {
+    color: #888800;
+    background-color: #FFFFF0;
+    border-color: #888800;
+}
+
+body div.error{
+    color:#880000;
+    background-color:#FFF0F0;
+    border-color:#880000;
+}
+
+p.error {
+    color: #880000;
+    background-color: #FFF0F0;
+    border-color: #880000;
+}
+

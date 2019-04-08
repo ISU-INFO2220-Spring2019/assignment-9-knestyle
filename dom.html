@@ -1,0 +1,60 @@
+﻿<!-- - - - - - - - - - - - - - - - - - - - -
+Tyler Kness-Miller
+February 18, 2019
+INFO 2220
+Jon Holmes
+Assignment 5
+Purpose: This is a page used to test JS code
+    that manipulated the DOM.
+- - - - - - - - - - - - - - - - - - - - - - -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>DOM and BOM</title>
+    <link href="styles/style.css" rel="stylesheet" />
+    <script src="scripts/dom.js"></script>
+</head>
+<body>
+    <!--Code imported from project directions.-->
+    <div>
+        <p id="pOne">I am <i>going</i> to <span>be</span> shown.</p>
+        <button onclick="showInnerText()">Display Inner Text</button>
+        <button onclick="showInnerHTML()">Display Inner HTML</button>
+    </div>
+    <div>
+        <ul>
+            <li>Item </li>
+            <li>Item </li>
+            <li>Item </li>
+            <li>Item </li>
+            <li>Item </li>
+        </ul>
+        <button onclick="numberList()">Number List Items</button>
+    </div>
+    <div>
+        <table id="tblMarkRows">
+            <tr><th>Number</th><th>Name</th></tr>
+            <tr><td>1</td><td>One</td></tr>
+            <tr><td>2</td><td>Two</td></tr>
+            <tr><td>3</td><td>Three</td></tr>
+            <tr><td>4</td><td>Four</td></tr>
+            <tr><td>5</td><td>Five</td></tr>
+            <tr><td>6</td><td>Six</td></tr>
+        </table><button onclick="markRows()">Mark Every Other Row</button>
+    </div>
+    <div>
+        <table id="tblAddRows">
+            <tr><th>First Name</th><th>Last Name</th><th>Age</th></tr>
+        </table>
+        <button onclick="addRows()">Add Data Rows</button>
+    </div>
+    <div id="divMessages">
+        <button onclick="addSuccess()">Add a Success Message</button>
+        <button onclick="addWarning()">Add a Warning Message</button>
+        <button onclick="addError()">Add an Error Message</button>
+    </div>
+    <a href="index.html">Back to Assignment List</a>
+</body>
+</html>

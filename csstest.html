@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<!-- - - - - - - - - - - - - - - - - - - - -
+Tyler Kness-Miller
+January 28, 2019
+INFO 2220
+Jon Holmes
+Assignment 2
+Purpose: This is a test HTML page, used to test style and CSS.
+- - - - - - - - - - - - - - - - - - - - - - -->
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Tyler's CSS Test</title>
+    <link href="styles/style.css" rel="stylesheet" />
+    <style>
+        /*Set body styles for both table and background.*/
+        body {
+            background-image: url('images/background-ribbon.png');
+            background-repeat: no-repeat; /*makes sure that the banner only appears once.*/
+            margin-left: 100px;
+            background-color: #f5ab76;
+        }
+
+        table {
+            border: 2px solid #000000;
+        }
+    </style>
+</head>
+<body id="csstest">
+    <div class="success">
+        <p>Test - Success</p>
+    </div>
+    <div class="warning">
+        <p>Test - Warning</p>
+    </div>
+    <div class="error">
+        <p>Test - Error</p>
+    </div>
+    <!--Set text and headers, which are 3 different sizes.-->
+    <h1>This is a Header (1).</h1>
+    <h2>This is a Header (2).</h2>
+    <h3>This is a Header (3).</h3>
+
+    <p>Aight let's do some testing. This right here is a <span>span of text.</span> 
+        With this, I can do all sorts of schwanky things. I can test <span class="special">all the things.</span>
+    </p>
+    <!--Set table and its contents.-->
+    <table>
+        <tr>
+            <th>Category</th>
+            <th>Most Liked</th>
+            <th>Least Liked</th>
+        </tr>
+        <tr>
+            <td>Candy</td>
+            <td>Reese's</td>
+            <td>Jolly Ranchers</td>
+        </tr>
+        <tr class="other">
+            <td>Cheese</td>
+            <td>Mozzarella</td>
+            <td>Feta</td>
+        </tr>
+        <tr>
+            <td>Number</td>
+            <td><span>42</span></td>
+            <td><span>0</span></td>
+        </tr>
+        <tr class="other">
+            <td>TV Show</td>
+            <td>The Expanse</td>
+            <td>Any Soap Opera Ever</td>
+        </tr>
+        <tr>
+            <td>Ice Cream Flavor</td>
+            <td>Moose Tracks</td>
+            <td>Strawberry</td>
+        </tr>
+    </table>
+
+    <a href="index.html">Back to assignment list.</a>
+</body>
+</html>

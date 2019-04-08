@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<!-- - - - - - - - - - - - - - - - - - - - -
+Tyler Kness-Miller
+January 21, 2019
+INFO 2220
+Jon Holmes
+Assignment 1 - Part 3
+Purpose: This is a page for a form that helps to practice post methods and sending data through a post event.
+- - - - - - - - - - - - - - - - - - - - - - -->
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Tyler's Super Awesome Form</title>
+    <link href="styles/style.css" rel="stylesheet" />
+</head>
+<body>
+    <form action="http://teaching.jdholmes.net/postvget/reader/index.php" method="post">
+        <label for="txtBengalID" hidden="hidden">Bengal ID:</label>
+        <input id="txtBengalID" type="hidden" name="bengalID" value="909850" />
+        <br />
+        <!--Define input text boxes.-->
+        <label for="txtFirstName">First Name:</label>
+        <input id="txtFirstName" name="firstName" type="text" value="Bob" />
+        <br />
+        <label for="txtLastName">Last Name:</label>
+        <input id="txtLastName" name="lastName" type="text" value="Billybob" />
+        <br />
+        <label for="txtSecretKey">Secret Key:</label>
+        <input id="txtSecretKey" name="secretKey" type="password" value="sickkkdude" />
+        <br />
+        <label for="ddlFavColor">Favorite Color:</label>
+        <select id="ddlFavColor" name="favoriteColor">
+            <optgroup label="Colors">
+                <option value="Blue">Blue</option>
+                <option value="Green">Green</option>
+                <option value="Red" selected="selected">Red</option>
+                <option value="Black">Black</option>
+            </optgroup>
+        </select>
+        <br />
+        <h6>Day of the Week:</h6>
+        <!--Define radio buttons.-->
+        <input type="radio" name="day" id="rbSunday" value="Sunday" />Sunday<br />
+        <input type="radio" name="day" id="rbMonday" value="Monday" />Monday<br />
+        <input type="radio" name="day" id="rbTuesday" value="Tuesday" />Tuesday<br />
+        <input type="radio" name="day" id="rbWednesday" value="Wednesday" />Wednesday<br />
+        <input type="radio" name="day" id="rbThursday" value="Thursday" />Thursday<br />
+        <input type="radio" name="day" id="rbFriday" value="Friday" checked="checked" />Friday<br />
+        <input type="radio" name="day" id="rbSaturday" value="Saturday" />Saturday<br />
+        <!--Define check boxes.-->
+        <h6>Times:</h6>
+        <input type="checkbox" name="time" id="chkEleven" value="11:00AM" checked="checked" />11:00AM <br />
+        <input type="checkbox" name="time" id="chkTwelve" value="12:00AM" />12:00AM <br />
+        <input type="checkbox" name="time" id="chkOne" value="1:00PM" />1:00PM <br />
+        <input type="checkbox" name="time" id="chkTwo" value="2:00PM" />2:00PM <br />
+        <input type="checkbox" name="time" id="chkThree" value="3:00PM" />3:00PM <br />
+
+        <label for="txtDescription">Description:</label>
+        <textarea cols="15" rows="3" name="description" id="txtDescription">Raaaaaaadical man.</textarea>
+        <br />
+        <input type="submit" value="Send to the Server" />
+    </form>
+
+    <a href="index.html">Back to Assignment List</a>
+</body>
+</html>
