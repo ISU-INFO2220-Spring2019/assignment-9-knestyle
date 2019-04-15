@@ -1,0 +1,53 @@
+﻿<!--Tyler Kness-Miller
+INFO 2220
+Professor Holmes
+15 April 2019
+Assignment 9 - Browser Storage-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Browser Storage</title>
+</head>
+<body>
+    <h1>Login Form</h1>
+    <form>
+        <label for="txtUserName">Username: </label>
+        <input id="txtUserName" type="text"/>
+
+        <label for="txtPassword">Password: </label>
+        <input id="txtPassword" type="password" />
+
+        <label for="chkRememberMe">Remember Me</label>
+        <input id="chkRememberMe" type="checkbox" />
+
+        <input id="btnForgetMe" type="button" value="ForgetMe"/>
+        <input id="btnLogin" type="submit" value="Login" />
+    </form>
+
+    <h1>User Form</h1>
+    <form>
+        <label for="txtName">Name: </label>
+        <input id="txtName" type="text" />
+
+        <label for="txtPhone">Phone: </label>
+        <input id="txtPhone" type="text" />
+
+        <label for="txtAge">Age: </label>
+        <input id="txtAge" type="text" />
+
+        <label for="groups">Group: </label>
+        <section id="groups">
+            <input id="rbOne" value="1" type="radio"/>
+            <input id="rbTwo" value="2" type="radio" />
+            <input id="rbThree" value="3" type="radio" />
+        </section>
+        <input type="submit" id="btnSubmitPerson" />
+    </form>
+    <button id="btnClearStorage">Clear Storage</button>
+
+    <a href="viewPerson.html">View Storage</a>
+    <a href="index.html">Back to Assignment List</a>
+</body>
+</html>
