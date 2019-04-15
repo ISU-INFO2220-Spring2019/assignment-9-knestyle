@@ -9,10 +9,13 @@ Assignment 9 - Browser Storage-->
 <head>
     <meta charset="utf-8" />
     <title>Browser Storage</title>
+    <script src="scripts/storage.js"></script>
+    <link href="styles/style.css" rel="stylesheet" />
+    <link href="styles/sorage.css" rel="stylesheet" />
 </head>
 <body>
     <h1>Login Form</h1>
-    <form>
+    <form id="login">
         <label for="txtUserName">Username: </label>
         <input id="txtUserName" type="text"/>
 
@@ -22,12 +25,12 @@ Assignment 9 - Browser Storage-->
         <label for="chkRememberMe">Remember Me</label>
         <input id="chkRememberMe" type="checkbox" />
 
-        <input id="btnForgetMe" type="button" value="ForgetMe"/>
+        <input id="btnForgetMe" type="submit" value="Forget Me"/>
         <input id="btnLogin" type="submit" value="Login" />
     </form>
 
     <h1>User Form</h1>
-    <form>
+    <form id="people">
         <label for="txtName">Name: </label>
         <input id="txtName" type="text" />
 
@@ -39,9 +42,9 @@ Assignment 9 - Browser Storage-->
 
         <label for="groups">Group: </label>
         <section id="groups">
-            <input id="rbOne" value="1" type="radio"/>
-            <input id="rbTwo" value="2" type="radio" />
-            <input id="rbThree" value="3" type="radio" />
+            <input id="rbOne" name="group" value="1" type="radio"/>1<br />
+            <input id="rbTwo" name="group" value="2" type="radio" />2<br />
+            <input id="rbThree" name="group" value="3" type="radio" />3<br />
         </section>
         <input type="submit" id="btnSubmitPerson" />
     </form>

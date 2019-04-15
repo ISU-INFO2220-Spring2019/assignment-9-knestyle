@@ -1,0 +1,55 @@
+﻿body {
+}
+
+form{
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 8px 0;
+}
+
+input{
+    display: block;
+}
+
+input[type=text]{
+    width: 90%;
+    margin: 8px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+input[type=password] {
+    width: 90%;
+    margin: 8px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+input[type=text]:focus{
+    outline: none;
+    border-bottom: 2px solid #006776;
+}
+
+input[type=password]:focus {
+    outline: none;
+    border-bottom: 2px solid #006776;
+}
+
+input[type=submit]:focus, input[type=submit]:hover, button:focus, button:hover{
+    border:2px solid #006776;
+}
+
+input[type=submit], button{
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 4px;
+}
+
+label{
+    display: block;
+    margin-left: 2px;
+}
+
+a{
+    display: block; 
+}
