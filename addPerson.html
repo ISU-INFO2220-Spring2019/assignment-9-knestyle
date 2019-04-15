@@ -10,6 +10,7 @@ Assignment 9 - Browser Storage-->
     <meta charset="utf-8" />
     <title>Browser Storage</title>
     <script src="scripts/storage.js"></script>
+    <script src="scripts/jquery-3.3.1.js"></script>
     <link href="styles/style.css" rel="stylesheet" />
     <link href="styles/sorage.css" rel="stylesheet" />
 </head>
@@ -42,14 +43,17 @@ Assignment 9 - Browser Storage-->
 
         <label for="groups">Group: </label>
         <section id="groups">
-            <input id="rbOne" name="group" value="1" type="radio"/>1<br />
+            <input id="rbOne" name="group" value="1" checked="checked" type="radio" />1<br />
             <input id="rbTwo" name="group" value="2" type="radio" />2<br />
             <input id="rbThree" name="group" value="3" type="radio" />3<br />
         </section>
-        <input type="submit" id="btnSubmitPerson" />
+        <input type="submit" id="btnSubmitPerson" value="Add Person" />
+        <input id="btnClearStorage" value="Clear Storage" type="submit" />
     </form>
-    <button id="btnClearStorage">Clear Storage</button>
+    
+    <ul id="peopleList">
 
+    </ul>
     <a href="viewPerson.html">View Storage</a>
     <a href="index.html">Back to Assignment List</a>
 </body>

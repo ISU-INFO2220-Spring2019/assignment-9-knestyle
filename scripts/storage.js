@@ -26,6 +26,50 @@ function forgetUser(e) {
     localStorage.removeItem("userName");
 }
 
+function addtoList(e) {
+    if (peopleArray == null) {
+        peopleArray = new Array();
+    }
+    var pname = document.getElementById("txtName").value;
+    
+    var pphone = document.getElementById("txtPhone").value;
+    
+    var peage = document.getElementById("txtAge").value;
+    //Find which radio button was checked, and grab the value out of it.
+    //I have a radio already checked by default, so this will never be empty.
+    var radios = document.forms.people.elements.group;
+    var pchecked = undefined;
+    for (var i = 0; i < radios.length; i++) {
+        var radio = radios[i];
+        if (radio.checked) {
+            pchecked = radio.value;
+            break;
+        }
+    }
+    
+    var k = JSON.stringify({ "name": pname, "age": peage, "phone": pphone, "group": pchecked });
+    peopleArray.push(JSON.stringify(k));
+    localStorage.setItem("peopleList", JSON.stringify(peopleArray));
+    fillPeopleList();
+}
+
+function fillPeopleList() {
+    var list = $('#peopleList');
+    list.empty();
+    for (var i = 0; i < peopleArray.length; i++) {
+        var k = peopleArray[i];
+        var j = JSON.parse(k);
+        var person = JSON.parse(j);
+        var listItem = document.createElement("li");
+        listItem.innerText = "Name: " + person.name + " Age: " + person.age + "\nPhone: " + person.phone + " Group: " + person.group;
+        list.append(listItem);
+    }
+}
+
+function clearListStorage() {
+    localStorage.removeItem("peopleList");
+}
+
 //Loads click events.
 window.onload = loader;
 function loader() {
@@ -33,10 +77,22 @@ function loader() {
         var name = document.getElementById("txtUserName");
         name.value = localStorage.getItem("userName");
     }
-
+    peopleArray = JSON.parse(localStorage.getItem("peopleList"));
+    if (peopleArray != null) {
+        fillPeopleList();
+    }
+    else {
+        peopleArray = new Array();
+    }
     var login = document.getElementById("btnLogin");
     login.onclick = loginUser;
 
     var forget = document.getElementById("btnForgetMe");
     forget.onclick = forgetUser;
+
+    var addPerson = document.getElementById("btnSubmitPerson");
+    addPerson.onclick = addtoList;
+
+    var clear = document.getElementById("btnClearStorage");
+    clear.onclick = clearListStorage;
 }
