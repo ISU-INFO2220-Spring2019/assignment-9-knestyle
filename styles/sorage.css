@@ -1,4 +1,9 @@
-﻿body {
+﻿/*Tyler Kness-Miller
+INFO 2220
+Professor Holmes
+17 April 2019*/
+
+body {
 }
 
 form{
@@ -7,7 +12,8 @@ form{
     margin: 8px 0;
 }
 
-#peopleList{
+
+#peopleList, #lstUsers{
     margin:0;
     padding: 0;
 }
@@ -17,7 +23,8 @@ li{
     border: 1px solid black;
     display: table;
     padding: 2px;
-    background-color: #ffc773;
+    background-color: #73c3ff;
+    width: 200px;
 }
 
 input{

@@ -26,6 +26,7 @@ function forgetUser(e) {
     localStorage.removeItem("userName");
 }
 
+//Function to grab values out of inputs and create a person, and add to the array and to LocalStorage.
 function addtoList(e) {
     if (peopleArray == null) {
         peopleArray = new Array();
@@ -53,6 +54,7 @@ function addtoList(e) {
     fillPeopleList();
 }
 
+//Function to fill the list with people from the array. 
 function fillPeopleList() {
     var list = $('#peopleList');
     list.empty();
@@ -63,6 +65,17 @@ function fillPeopleList() {
         var listItem = document.createElement("li");
         listItem.innerText = "Name: " + person.name + " Age: " + person.age + "\nPhone: " + person.phone + " Group: " + person.group;
         list.append(listItem);
+    }
+
+    var list2 = $('#lstUsers');
+    list2.empty();
+    for (var i = 0; i < peopleArray.length; i++) {
+        var k = peopleArray[i];
+        var j = JSON.parse(k);
+        var person = JSON.parse(j);
+        var listItem = document.createElement("li");
+        listItem.innerText = "Name: " + person.name + " Age: " + person.age + "\nPhone: " + person.phone + " Group: " + person.group;
+        list2.append(listItem);
     }
 }
 
