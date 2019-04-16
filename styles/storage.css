@@ -4,7 +4,13 @@ Professor Holmes
 17 April 2019*/
 
 body {
-    background-color:#6d6d6d;
+    background-color:#9d9d9d;
+}
+
+h1 {
+    width: 100%;
+    border-bottom: 4px solid black;
+    color: #0087ac;
 }
 
 form{
@@ -20,13 +26,20 @@ form{
     padding: 0;
 }
 
-li{
+li {
     list-style-type: none;
     border: 1px solid black;
     display: table;
     padding: 2px;
     background-color: #73c3ff;
     width: 350px;
+    transition: margin-left 0.5s;
+}
+
+li:hover{
+    border: 2px solid #006776;
+    margin-left: 5px;
+    transition: margin-left 0.5s;
 }
 
 input{
@@ -39,6 +52,7 @@ input[type=text]{
     margin: 8px;
     border: none;
     border-bottom: 1px solid black;
+    transition: border-bottom-color 1.0s;
 }
 
 input[type=password] {
@@ -46,17 +60,20 @@ input[type=password] {
     margin: 8px;
     border: none;
     border-bottom: 1px solid black;
+    transition: border-bottom-color 1.0s;
 }
 
 /*These handle inputs when they are in focus.*/
 input[type=text]:focus{
     outline: none;
     border-bottom: 2px solid #006776;
+    transition: border-bottom-color 1.0s;
 }
 
 input[type=password]:focus {
     outline: none;
     border-bottom: 2px solid #006776;
+    transition: border-bottom-color 1.0s;
 }
 
 input[type=submit]:focus, input[type=submit]:hover, button:focus, button:hover{
@@ -100,4 +117,5 @@ a{
     width: 250px;
     background-color: #ffffff;
     padding-left: 5px;
+    margin: 3px;
 }

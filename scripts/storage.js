@@ -119,7 +119,7 @@ function fillPeopleList() {
         listItem.style.backgroundImage = "url('images/profile-pic.jpg')";
         listItem.style.backgroundSize = "50px 50px";
         listItem.style.backgroundRepeat = "no-repeat";
-        listItem.style.paddingLeft = "50px";
+        listItem.style.paddingLeft = "55px";
 
         //Add to the list.
         list.append(listItem);
@@ -139,7 +139,7 @@ function fillPeopleList() {
         listItem.style.backgroundImage = "url('images/profile-pic.jpg')";
         listItem.style.backgroundSize = "50px 50px";
         listItem.style.backgroundRepeat = "no-repeat";
-        listItem.style.paddingLeft = "50px";
+        listItem.style.paddingLeft = "55px";
         
         list2.append(listItem);
     }
