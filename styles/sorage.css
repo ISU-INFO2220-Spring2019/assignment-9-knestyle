@@ -32,6 +32,7 @@ li{
 input{
     display: block;
 }
+
 /*These styles are for specific types of inputs.*/
 input[type=text]{
     width: 90%;
@@ -46,6 +47,7 @@ input[type=password] {
     border: none;
     border-bottom: 1px solid black;
 }
+
 /*These handle inputs when they are in focus.*/
 input[type=text]:focus{
     outline: none;
@@ -62,12 +64,13 @@ input[type=submit]:focus, input[type=submit]:hover, button:focus, button:hover{
 }
 
 input[type=submit], button{
-    width: 100px;
+    width: 125px;
     border: 2px solid black;
     border-radius: 4px;
     margin: 4px;
 }
 
+/*This helped fix weird display errors with the radio buttons in the person form.*/
 .r{
     display: inline;
 }
@@ -87,6 +90,7 @@ li button{
     height:25px;
     width: 50px;
 }
+
 /*Gets rid of underline in link, add a button-like style.*/
 a{
     display: block; 

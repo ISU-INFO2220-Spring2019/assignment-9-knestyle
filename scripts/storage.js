@@ -64,6 +64,7 @@ function addtoList(e) {
     else {
         peopleArray[gindex] = JSON.stringify(k);
         gindex = -1;
+        document.getElementById("btnSubmitPerson").value = "Add Person";
     }
     //Add the array back to storage, fill the people lists.
     localStorage.setItem("peopleList", JSON.stringify(peopleArray));
@@ -91,6 +92,8 @@ function editPerson(person, index) {
     }
     //Set global index to allow the user to edit the person.
     gindex = person[1];
+
+    document.getElementById("btnSubmitPerson").value = "Submit Changes";
 }
 
 //Function to fill the list with people from the array. 
