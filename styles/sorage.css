@@ -68,6 +68,10 @@ input[type=submit], button{
     margin: 4px;
 }
 
+.r{
+    display: inline;
+}
+
 label{
     display: block;
     margin-left: 2px;
