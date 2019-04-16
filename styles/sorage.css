@@ -4,12 +4,14 @@ Professor Holmes
 17 April 2019*/
 
 body {
+    background-color:#6d6d6d;
 }
 
 form{
     border: 2px solid black;
     border-radius: 4px;
     margin: 8px 0;
+    background-color:#ffffff;
 }
 
 
@@ -24,13 +26,13 @@ li{
     display: table;
     padding: 2px;
     background-color: #73c3ff;
-    width: 200px;
+    width: 350px;
 }
 
 input{
     display: block;
 }
-
+/*These styles are for specific types of inputs.*/
 input[type=text]{
     width: 90%;
     margin: 8px;
@@ -44,6 +46,7 @@ input[type=password] {
     border: none;
     border-bottom: 1px solid black;
 }
+/*These handle inputs when they are in focus.*/
 input[type=text]:focus{
     outline: none;
     border-bottom: 2px solid #006776;
@@ -70,6 +73,23 @@ label{
     margin-left: 2px;
 }
 
+li img{
+    max-height:50px;
+    max-width:50px;
+    margin-left: 200px;
+}
+
+li button{
+    height:25px;
+    width: 50px;
+}
+/*Gets rid of underline in link, add a button-like style.*/
 a{
     display: block; 
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 250px;
+    background-color: #ffffff;
+    padding-left: 5px;
 }
