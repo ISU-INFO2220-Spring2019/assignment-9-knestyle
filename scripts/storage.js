@@ -117,9 +117,9 @@ function fillPeopleList() {
 
         //Add a background image to serve as the "profile pic".
         listItem.style.backgroundImage = "url('images/profile-pic.jpg')";
-        listItem.style.backgroundSize = "50px 50px";
+        listItem.style.backgroundSize = "56px 56px";
         listItem.style.backgroundRepeat = "no-repeat";
-        listItem.style.paddingLeft = "55px";
+        listItem.style.paddingLeft = "58px";
 
         //Add to the list.
         list.append(listItem);
